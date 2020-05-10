@@ -215,10 +215,10 @@
 
 @media only screen and (max-width: 576px) {
   .Header-Content {
-    height: 3rem;
+    height: 4rem;
   }
   .Header-Logo {
-    width: 140px;
+    width: 150px;
   }
   .TopMenu {
     width: calc(100vw - 60px);
