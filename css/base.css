@@ -91,6 +91,7 @@ html {
 }
 
 .InstaLink {
+  display: block;
   text-align: center;
   color: #777777;
   margin-bottom: 30px;
@@ -102,7 +103,6 @@ html {
 
 .Contacts-Item{
   position: relative;
-  
 }
 
 .Contacts-Link {
