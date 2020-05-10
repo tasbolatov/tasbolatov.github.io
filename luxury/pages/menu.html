@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ресторан LUXURY</title>
+	<meta name="description" content="Project description">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Styles for Async load -->
+	
+		<!-- FONTS -->
+		<link rel="preload" href="../css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/fonts.css">
+		</noscript>
+
+		<!-- Font Awesome -->
+		<link rel="preload" href="../libs/font-awesome/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/font-awesome/css/all.css">
+		</noscript>
+
+		<!-- Owl Carousel -->
+		<link rel="preload" href="../libs/owlCarousel/css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.carousel.min.css">
+		</noscript>
+		<link rel="preload" href="../libs/owlCarousel/css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.theme.default.min.css">
+		</noscript>
+
+		<!-- Hamburger CSS -->
+		<link rel="preload" href="../css/hamburgers.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/hamburgers.css">
+		</noscript>
+
+		<!-- EXAMPLE -->
+		<!-- <link rel="preload" href="path/to/mystylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="path/to/mystylesheet.css">
+		</noscript> -->
+
+		<!-- END Styles for Async load -->
+
+	<!-- Bootstrap Grid CSS -->
+	<link rel="stylesheet" href="../libs/bootstrap-grid/bootstrap-grid.min.css">
+
+	<!-- Base CSS -->
+	<link rel="stylesheet" href="../css/base.css">
+
+	<!-- Food CSS -->
+	<link rel="stylesheet" href="../css/Food.css">
+
+</head>
+
+<body>
+
+	<!-- page-wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Header -->
+			<link rel="stylesheet" href="../css/Header.css">
+				<header class="Header">
+					<div class="Header-Content">
+						<div class="container-fluid">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<a href="../index.html" class="Header-Logo"></a>
+								</div>
+								<div class="col TopMenu-Wrapper">
+									<nav class="TopMenu">
+										<ul class="TopMenu-Content">
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="../index.html">Главная</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="#">Меню</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="recipes.html">Рецепты</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="reservation.html">Бронирование</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="about.html">О нас</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="contacts.html">Контакты</a>
+											</li>
+											<li class="TopMenu-Item d-block d-sm-none">
+												<a href="#ReserveTable" class="Button Button_Border Navigate">
+													<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+													Бронировать
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<!-- <div class="col-auto">
+									<div class="Cart">
+										<a href="#" class="Cart-Icon">
+											<i class="fal fa-shopping-cart"></i>
+											<span class="Cart-ItemsCount">3</span>
+										</a>
+										<div class="Cart-PopupToggle d-none d-sm-block">
+											<i class="fa fa-caret-down"></i>
+										</div>
+										<div class="MiniCart">
+											<div class="MiniCart-Content"></div>
+										</div>
+									</div>
+								</div> -->
+								<div class="col-auto d-none d-sm-block">
+									<a href="#ReserveTable" class="Button Button_Border Navigate">
+										<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+										Бронировать
+									</a>
+								</div>
+								<div class="col-auto Header-MenuBtn">
+									<div class="hamburger hamburger--stand">
+										<div class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			<!-- Header END -->
+
+			<!-- PageInner -->
+			<link rel="stylesheet" href="../css/PageInner.css">
+			<div class="PageInner">
+				<div class="PageInner-Content">
+					<div class="PageInner-Lead" >
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<h2 class="PageInner-Title">Меню</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Menu -->
+					<link rel="stylesheet" href="../css/Menu.css">
+						<section class="Menu">
+							<div class="Menu-Content">
+								<div class="Menu-Lead">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-12">
+												<!-- <h2 class="Menu-Title SectionTitle">Меню Лист</h2> -->
+												<ul class="FoodTypes">
+													<li class="FoodTypes-Item">
+														<div class="FoodType zero">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/all.png" alt="">
+															</div>
+															<div class="FoodType-Name">Все</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType first">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/breakfast.png" alt="">
+															</div>
+															<div class="FoodType-Name">Завтраки</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType second">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/lunch.png" alt="">
+															</div>
+															<div class="FoodType-Name">Обед</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType third">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/snacks.png" alt="">
+															</div>
+															<div class="FoodType-Name">Закуски</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType fourth">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/pizza.png" alt="">
+															</div>
+															<div class="FoodType-Name">Пицца</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType fifth">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/binner.png" alt="">
+															</div>
+															<div class="FoodType-Name">Ужин</div>
+														</div>
+													</li>
+													<li class="FoodTypes-Item">
+														<div class="FoodType sixth">
+															<div class="FoodType-Icon">
+																<img src="../img/icons/FoodTypes/salad.png" alt="">
+															</div>
+															<div class="FoodType-Name">Салаты</div>
+														</div>
+													</li>
+												</ul>
+												<div class="RowView">
+													<button id="List" class="RowView-Button" title="Лист"><i class="fa fa-list"></i></button>
+													<button id="Grid" class="RowView-Button" title="Сетка"><i class="fa fa-th"></i></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="MenuRow">
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракБЕЛЬГИЙСКИЕ-ВАФЛИ-С-СЫРНЫМ-ПЛОМБИРОМ-И-ВАРЕНЬЕМ-ИХ-АЙВЫ.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">БЕЛЬГИЙСКИЕ ВАФЛИ С СЫРНЫМ ПЛОМБИРОМ</h3>
+											<div class="Food-Desc"> И ВАРЕНЬЕМ ИХ АЙВЫ</div>
+										</div>
+										<div class="Food-Price">890<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракБЛИНЧИКИ-С-РИКОТТОЙ-И-СОЛЕНОЙ-КАРАМЕЛЬЮ.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">БЛИНЧИКИ С РИКОТТОЙ </h3>
+											<div class="Food-Desc">И СОЛЕНОЙ КАРАМЕЛЬЮ</div>
+										</div>
+										<div class="Food-Price">990<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракСЕНДВИч-С-ГОВЯДИНОЙ-СОБСВЕННОГО-КОПЧЕНИЯ,-КАЧОТТОЙ-И-ПЕРЦЕМ-ХАЛАПЕНЬО.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">СЕНДВИЧ С ГОВЯДИНОЙ </h3>
+											<div class="Food-Desc">С ГОВЯДИНОЙ СОБСВЕННОГО КОПЧЕНИЯ, КАЧОТТОЙ И ПЕРЦЕМ ХАЛАПЕНЬО</div>
+										</div>
+										<div class="Food-Price">1 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракСЕНДВИЧ-С-ЖАРЕНОЙ-ИНДЕЙКОЙ,-ПЕЧЕНЫМИ-ПЕРЦАМИ,-С-МЕДОВО-ГОРЧИЧНЫМ-СОУСОМ.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">СЕНДВИЧ С ЖАРЕНОЙ ИНДЕЙКОЙ, </h3>
+											<div class="Food-Desc">С ПЕЧЕНЫМИ ПЕРЦАМИ, И МЕДОВО ГОРЧИЧНЫМ СОУСОМ</div>
+										</div>
+										<div class="Food-Price">1 290<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракТОМЛЁННАЯ-МОЛОЧНАЯ-КАША-ДНЯ.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">ТОМЛЁННАЯ МОЛОЧНАЯ КАША ДНЯ</h3>
+											<div class="Food-Desc">СО СВЕЖЫМИ ФРУКТАМИ</div>
+										</div>
+										<div class="Food-Price">1 090<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракШАКШУКА-БЛИЖНЕВОСТОЧНАЯ-ЯИЧНИЦА-ГЛАЗУНЬЯ-В-ТОМАТНОМ-СОУСЕ-С-ПЕРЦЕМ-И-ПРЯНЫМИ-СПЕЦИЯМИ.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">ШАКШУКА БЛИЖНЕВОСТОЧНАЯ </h3>
+											<div class="Food-Desc">ЯИЧНИЦА ГЛАЗУНЬЯ В ТОМАТНОМ СОУСЕ С ПЕРЦЕМ И ПРЯНЫМИ СПЕЦИЯМИ</div>
+										</div>
+										<div class="Food-Price">1 090<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/завтракЯЙЦО-ПАШОТ-С-ЛОСОСЕМ-СЛАБОЙ-СОЛИ,-СТРАЧАТЕЛЛОЙ-И-СОУСОМ-«ГОЛЛАНДЕЗ»-НА-ХРУСТЯЩЕЙ-ЧИАБАТТ.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">ЯЙЦО ПАШОТ</h3>
+											<div class="Food-Desc"> С ЛОСОСЕМ СЛАБОЙ СОЛИ, И СОУСОМ «ГОЛЛАНДЕЗ» НА ХРУСТЯЩЕЙ ЧИАБАТТ</div>
+										</div>
+										<div class="Food-Price">1 090<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast">
+										<div class="Food-Image" style="background-image: url(../img/menu/закуски-бутерброд-с-креветками.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">бутерброд с креветками</h3>
+											<div class="Food-Desc">со свежим огурцом и куриным яйцом</div>
+										</div>
+										<div class="Food-Price">1 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food snacks">
+										<div class="Food-Image" style="background-image: url(../img/menu/закуски-гребешки-с-икорным-соусом.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">гребешки с икорным соусом</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">1 990<span>₸</span></div>
+									</a>
+									<a href="#" class="Food snacks">
+										<div class="Food-Image" style="background-image: url(../img/menu/закуски-гребешки-с-яблоком.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Гребешки с яблоком</h3>
+											<div class="Food-Desc">с кремом из цветной капусты и соусом из чернослива</div>
+										</div>
+										<div class="Food-Price">1 790<span>₸</span></div>
+									</a>
+									<a href="#" class="Food snacks">
+										<div class="Food-Image" style="background-image: url(../img/menu/закуски-тартар-из-говядины.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Тартар из говядины</h3>
+											<div class="Food-Desc">с чипсами из корнеплодов, трюфельным кремом и костным мозгом</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-бургер-из-мраморной-говядины.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">бургер из мраморной говядины</h3>
+											<div class="Food-Desc">с картофелем фри</div>
+										</div>
+										<div class="Food-Price">3 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-крем-суп-из-корня-селдерея.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">крем суп из корня селдерея</h3>
+											<div class="Food-Desc">наваристый бульон из северных рыб</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-кукурузный-суп-с-креветками.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">кукурузный суп</h3>
+											<div class="Food-Desc">с креветками</div>
+										</div>
+										<div class="Food-Price">2 190<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-куриный-суп.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">куриный суп</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">1 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-курица-с-шампиньонами.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">курица с шампиньонами</h3>
+											<div class="Food-Desc">со сливочным соусом и зеленью</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-пельмени.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Пельмени из говядины</h3>
+											<div class="Food-Desc">с брусникой</div>
+										</div>
+										<div class="Food-Price">2 190<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обедРАМЕН-С-ГОВЯЖЬИМИ-ХВОСТАМИ,ПАК-ЧОЕМ-ГРИБАМИ-И-ЗЕЛЕНЬЮ.jpeg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">РАМЕН С ГОВЯЖЬИМИ ХВОСТАМИ</h3>
+											<div class="Food-Desc">С ПАК ЧОЕМ, ГРИБАМИ И ЗЕЛЕНЬЮ</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food lunch">
+										<div class="Food-Image" style="background-image: url(../img/menu/обед-уха-по-царски.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">уха по-царски</h3>
+											<div class="Food-Desc">со свежим лососем и зеленью</div>
+										</div>
+										<div class="Food-Price">1 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food pizza">
+										<div class="Food-Image" style="background-image: url(../img/menu/пицца-маргарита.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">пицца маргарита</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">1 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food pizza">
+										<div class="Food-Image" style="background-image: url(../img/menu/пицца-пепперони.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">пицца пепперони</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">1 890<span>₸</span></div>
+									</a>
+									<a href="#" class="Food pizza">
+										<div class="Food-Image" style="background-image: url(../img/menu/пицца-пицца-с-лососем.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">пицца с лососем</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">2 290<span>₸</span></div>
+									</a>
+									<a href="#" class="Food salad">
+										<div class="Food-Image" style="background-image: url(../img/menu/салат-винегрет-с-фундуком.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">салат винегрет с фундуком</h3>
+											<div class="Food-Desc">из свежих и печеных овощей с горчичным маслом и фундуком</div>
+										</div>
+										<div class="Food-Price">2 190<span>₸</span></div>
+									</a>
+									<a href="#" class="Food salad">
+										<div class="Food-Image" style="background-image: url(../img/menu/салат-с-качатским-крабом.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">салат с камчатским крабом</h3>
+											<div class="Food-Desc">с желтыми томатами и хурмой</div>
+										</div>
+										<div class="Food-Price">3 690<span>₸</span></div>
+									</a>
+									<a href="#" class="Food salad">
+										<div class="Food-Image" style="background-image: url(../img/menu/салат-с-печенью-трески.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">салат с печенью трески</h3>
+											<div class="Food-Desc">авокадо и яйцом пашот</div>
+										</div>
+										<div class="Food-Price">2 990<span>₸</span></div>
+									</a>
+									<a href="#" class="Food dinner">
+										<div class="Food-Image" style="background-image: url(../img/menu/салат-телячий-язык-с-грибами.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">телячий язык с грибами</h3>
+											<div class="Food-Desc">картофельным кремом и жареным луком</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food salad">
+										<div class="Food-Image" style="background-image: url(../img/menu/салат-теплый-салат-с-говядиной.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">теплый салат с говядиной</h3>
+											<div class="Food-Desc">со шпинатом и грибами</div>
+										</div>
+										<div class="Food-Price">2 990<span>₸</span></div>
+									</a>
+									<a href="#" class="Food dinner">
+										<div class="Food-Image"  style="background-image: url(../img/menu/ужин-бефстроганов-из-говядины.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">бефстроганов</h3>
+											<div class="Food-Desc">с кортофельным пюре</div>
+										</div>
+										<div class="Food-Price">2 990<span>₸</span></div>
+									</a>
+									<a href="#" class="Food dinner">
+										<div class="Food-Image" style="background-image: url(../img/menu/ужин-лосось-с-печеной-капустой.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Лосось с печеной капустой</h3>
+											<div class="Food-Desc">с печеной капустой и щучьей икрой</div>
+										</div>
+										<div class="Food-Price">2 890<span>₸</span></div>
+									</a>
+									<a href="#" class="Food dinner">
+										<div class="Food-Image" style="background-image: url(../img/menu/ужин-утиная-грудка.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Утиная грудка</h3>
+											<div class="Food-Desc">с кремом из печеной моркови и ягодами</div>
+										</div>
+										<div class="Food-Price">2 490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food dinner">
+										<div class="Food-Image" style="background-image: url(../img/menu/ужин-филе-миньон-с-белыми-грибами.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">Филе Миньон с белыми грибами</h3>
+											<div class="Food-Desc">с сыром ризотто</div>
+										</div>
+										<div class="Food-Price">3 690<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast lunch dinner snacks">
+										<div class="Food-Image" style="background-image: url(../img/menu/хлеб-белый.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">хлеб белый</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">490<span>₸</span></div>
+									</a>
+									<a href="#" class="Food breakfast lunch dinner snacks">
+										<div class="Food-Image" style="background-image: url(../img/menu/хлеб-ржаной.jpg);"></div>
+										<div class="Food-Lead">
+											<h3 class="Food-Name">хлеб ржаной</h3>
+											<div class="Food-Desc"></div>
+										</div>
+										<div class="Food-Price">490<span>₸</span></div>
+									</a>
+								</div>
+								<div class="Menu-Inner">
+									<div class="container-fluid">
+										<div class="row">
+											<div class="col-12">
+												<div class="Center">
+													<a href="#" class="Button Menu--Button">Посмотреть больше еды</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					<!-- Menu END -->
+
+
+
+
+
+
+					<!-- Speciality -->
+					<link rel="stylesheet" href="../css/Speciality.css">
+						<section class="Speciality">
+							<div class="Speciality-Content">
+								<div class="Speciality-Image"></div>
+								<div class="Speciality-Inner">
+									<h2 class="Speciality-Title SectionTitle">Фирменное блюдо</h2>
+									<ul class="AdvantagesList">
+										<li class="AdvantagesList-Item">
+											<div class="Advantage">
+												<h3 class="Advantage-Title">Отличное обслуживание</h3>
+												<div class="Advantage-Description">
+													РЕСТОРАН, НЕ ИМЕЮЩИЙ АНАЛОГОВ В КАЗАХСТАНЕ , КОТОРЫЙ ПРИЗВАН ПОДНЯТЬ НА НОВУЮ СТУПЕНЬ ОТРАСЛЬ СЕРВИСА И ИНТЕГРАЦИИ ЕГО В СОВРЕМЕННУЮ ГОРОДСКУЮ ГАСТРОНОМИЧЕСКУЮ КУЛЬТУРУ
+												</div>
+											</div>
+										</li>
+										<li class="AdvantagesList-Item">
+											<div class="Advantage">
+												<h3 class="Advantage-Title">Бесплатная доставка на дом</h3>
+												<div class="Advantage-Description">
+													КУХНЯ ЯРКАЯ И СОДЕРЖАТЕЛЬНАЯ, НО ПРИ ЭТОМ ПРОСТАЯ И ПОНЯТНАЯ, НА КАЖДЫЙ ДЕНЬ, С ДОСТАВКОЙ НА ДОМ
+												</div>
+											</div>
+										</li>
+										<li class="AdvantagesList-Item">
+											<div class="Advantage">
+												<h3 class="Advantage-Title">Теплая	 атмосфера</h3>
+												<div class="Advantage-Description">
+													УНИКАЛЬНЫЙ ДЛЯ КАЗАХСТАНА РЕСТОРАННЫЙ ПРОЕКТ, ГДЕ СОЕДИНИЛИСЬ РОСКОШНОСТЬ НАСТОЯЩЕЙ КУЛИНАРИИ И СОВРЕМЕННЫЕ ГАСТРОНОМИЧЕСКИЕ ТЕНДЕНЦИИ.
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					<!-- Speciality END -->
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+			<!-- PageInner END -->
+
+			<!-- OpeningHours -->
+			<link rel="stylesheet" href="../css/OpeningHours.css">
+				<section class="OpeningHours">
+					<div class="OpeningHours-Content">
+						<div class="container-fluid">
+							<div class="row align-items-center">
+								<div class="col-12 col-sm-auto">
+									<h2 class="OpeningHours-Title SectionTitle">Время работы</h2>
+								</div>
+								<div class="col-12 col-sm">
+									<div class="OpeningHours-Schedule">
+										<div class="OpeningHours-Days">
+											<div class="OpeningHours-Day">С Понедельника до Пятницы</div>	
+											<div class="OpeningHours-Time">10:00 - 22:00</div>	
+										</div>
+										<div class="OpeningHours-Days">
+											<div class="OpeningHours-Day">В Субботу и Воскресенье</div>	
+											<div class="OpeningHours-Time">09:00 - 21:00</div>	
+										</div>
+									</div>
+								</div>
+								<div class="col-auto d-none d-lg-block">
+									<div class="OpeningHours-Image"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			<!-- OpeningHours END -->
+
+			<!-- Footer -->
+			<link rel="stylesheet" href="../css/Footer.css">
+				<footer class="Footer">
+					<div class="Footer-Content">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-3">
+									<h3 class="Footer-Title">Навигация</h3>
+									<ul class="FooterNavigation">
+										<li class="FooterNavigation-Item"><a href="../index.html">Главная</a></li>
+										<li class="FooterNavigation-Item"><a href="about.html">О нас</a></li>
+										<li class="FooterNavigation-Item"><a href="menu.html">Меню</a></li>
+										<li class="FooterNavigation-Item"><a href="reservation.html">Бронирование</a></li>
+										<li class="FooterNavigation-Item"><a href="recipes.html">Рецепты</a></li>
+										<li class="FooterNavigation-Item"><a href="#">Блог</a></li>
+										<li class="FooterNavigation-Item"><a href="contacts.html">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-9">
+									<h3 class="Footer-Title">Рассылка</h3>
+									<div class="Newsletter">
+										<div class="Newsletter-Title">Введите свой адрес электронной почты и подпишитесь на ежедневную рассылку новостей</div>
+										<form action="#" class="Newsletter-Form">
+											<div class="Newsletter-Label">
+												<div class="Newsletter-Icon">
+													<i class="fal fa-envelope"></i>
+												</div>
+												<input type="email" required="" placeholder="E-mail" class="Newsletter-Input">
+											</div>
+											<button class="Newsletter-Button Button">Подписаться</button>
+										</form>
+									</div>
+									<ul class="Socials">
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_FB"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_TW"><i class="fab fa-twitter"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_GP"><i class="fab fa-google-plus-g"></i></a></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<div class="FooterCopyright">
+										<span class="line"></span>
+										<div class="FooterCopyright-Content">
+											<span class="year"></span>&copy; <span class="CompanyName">Ресторан LUXURY</span> <span class="AllRightsReserved">Все права защищены</span>
+										</div>
+										<span class="line"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			<!-- Footer END -->
+			
+		</div>
+	<!-- page-wrapper END -->
+
+	
+	<!-- ***** SCRIPTS ***** -->
+
+		<!-- jQuery -->
+		<script src="../libs/jquery/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+	    <script src="../libs/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- LoadCSS JS -->
+		<script src="../libs/loadCSS/cssrelpreload.js"></script>
+
+		<!-- Owl Carousel -->
+		<script src="../libs/owlCarousel/js/owl.carousel.min.js"></script>
+
+		<!-- Main JS -->
+		<script src="../js/main.js"></script>
+
+	<!-- ******************* -->
+
+</body>
+
+</html>

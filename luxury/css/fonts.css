@@ -1,0 +1,28 @@
+/*** FONTS ***/
+@font-face {
+  font-family: "playfair-x";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/PlayfairDisplayRegular/PlayfairDisplayRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "playfair-x";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PlayfairDisplayBold/PlayfairDisplayBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "opensans-x";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "opensans-x";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff");
+}

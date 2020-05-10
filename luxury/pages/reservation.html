@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ресторан LUXURY</title>
+	<meta name="description" content="Project description">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Styles for Async load -->
+	
+		<!-- FONTS -->
+		<link rel="preload" href="../css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/fonts.css">
+		</noscript>
+
+		<!-- Font Awesome -->
+		<link rel="preload" href="../libs/font-awesome/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/font-awesome/css/all.css">
+		</noscript>
+
+		<!-- Owl Carousel -->
+		<link rel="preload" href="../libs/owlCarousel/css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.carousel.min.css">
+		</noscript>
+		<link rel="preload" href="../libs/owlCarousel/css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.theme.default.min.css">
+		</noscript>
+
+		<!-- Hamburger CSS -->
+		<link rel="preload" href="../css/hamburgers.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/hamburgers.css">
+		</noscript>
+
+		<!-- EXAMPLE -->
+		<!-- <link rel="preload" href="path/to/mystylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="path/to/mystylesheet.css">
+		</noscript> -->
+
+		<!-- END Styles for Async load -->
+
+	<!-- Bootstrap Grid CSS -->
+	<link rel="stylesheet" href="../libs/bootstrap-grid/bootstrap-grid.min.css">
+
+	<!-- Base CSS -->
+	<link rel="stylesheet" href="../css/base.css">
+
+	<!-- Food CSS -->
+	<link rel="stylesheet" href="../css/Food.css">
+
+</head>
+
+<body>
+
+	<!-- page-wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Header -->
+			<link rel="stylesheet" href="../css/Header.css">
+				<header class="Header">
+					<div class="Header-Content">
+						<div class="container-fluid">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<a href="../index.html" class="Header-Logo"></a>
+								</div>
+								<div class="col TopMenu-Wrapper">
+									<nav class="TopMenu">
+										<ul class="TopMenu-Content">
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="../index.html">Главная</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="menu.html">Меню</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="recipes.html">Рецепты</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="#">Бронирование</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="about.html">О нас</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="contacts.html">Контакты</a>
+											</li>
+											<li class="TopMenu-Item d-block d-sm-none">
+												<a href="#ReserveTable" class="Button Button_Border Navigate">
+													<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+													Бронировать
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<!-- <div class="col-auto">
+									<div class="Cart">
+										<a href="#" class="Cart-Icon">
+											<i class="fal fa-shopping-cart"></i>
+											<span class="Cart-ItemsCount">3</span>
+										</a>
+										<div class="Cart-PopupToggle d-none d-sm-block">
+											<i class="fa fa-caret-down"></i>
+										</div>
+										<div class="MiniCart">
+											<div class="MiniCart-Content"></div>
+										</div>
+									</div>
+								</div> -->
+								<div class="col-auto d-none d-sm-block">
+									<a href="#ReserveTable" class="Button Button_Border Navigate">
+										<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+										Бронировать
+									</a>
+								</div>
+								<div class="col-auto Header-MenuBtn">
+									<div class="hamburger hamburger--stand">
+										<div class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			<!-- Header END -->
+
+			<!-- PageInner -->
+			<link rel="stylesheet" href="../css/PageInner.css">
+			<div class="PageInner">
+				<div class="PageInner-Content">
+					<div class="PageInner-Lead">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<h2 class="PageInner-Title">Бронирование</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- BookATable -->
+					<link rel="stylesheet" href="../css/BookATable.css">
+						<section class="BookATable">
+							<div class="BookATable-Content">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12">
+											<h2 class="SectionTitle BookATable-Title">Бронировать столик</h2>
+											<p class="BookATable-Desc">
+												Забронируйте столик именно под ваше мероприятие. После отправки всех данных, наш менеджер не замедлительно свяжется с вами.
+											</p>
+										</div>
+									</div>
+									<form class="row BookATableForm">
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-user"></i>
+												</div>
+												<input type="text" class="BookATableForm-Input" placeholder="Имя*" required>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-envelope"></i>
+												</div>
+												<input type="email" class="BookATableForm-Input" placeholder="Email*" required>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-mobile-android"></i>
+												</div>
+												<input type="tel" class="BookATableForm-Input" placeholder="Телефон*" required>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-calendar-alt"></i>
+												</div>
+												<input type="date" class="BookATableForm-Input" placeholder="Дата*" required>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-tachometer-alt-fast"></i>
+												</div>
+												<input type="time" class="BookATableForm-Input" placeholder="Время*" required>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-6">
+											<div class="BookATableForm-Label">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-user-friends"></i>
+												</div>
+												<input type="number" class="BookATableForm-Input" placeholder="Посетители*" required>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="BookATableForm-Label BookATableForm-Label_Sizable">
+												<div class="BookATableForm-Icon">
+													<i class="fal fa-comments"></i>
+												</div>
+												<textarea class="BookATableForm-Input" placeholder="Особые пожелания"></textarea>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="Center">
+												<button type="submit" class="Button BookATable__Button">Забронировать</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</section>
+					<!-- BookATable END -->
+
+					<!-- SpecialReservation -->
+					<link rel="stylesheet" href="../css/SpecialReservation.css">
+						<section class="SpecialReservation">
+							<div class="SpecialReservation-Content">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-12">
+											<h2 class="SectionTitle SpecialReservation-Title">Специальное бронирование</h2>
+										</div>
+									</div>
+									<div class="row justify-content-center">
+										<div class="col-sm-6 col-lg-4">
+											<div class="SpecialCard">
+												<div class="SpecialCard-Image" style="background-image: url(../img/specialbooking/businessevent.jpg);"></div>
+												<div class="SpecialCard-Content">
+													<h3 class="SpecialCard-Title">Приватный ужин</h3>
+													<p class="SpecialCard-Desc">
+														Подходит для деловых встреч, где внимание собеседника особо важна. И для таких мероприятии специально усмотрен особый уголок нашело ресторана - VIP зал.
+													</p>
+												</div>
+												<div class="SpecialCard-Popup">
+													<div class="SpecialCardCall">
+														<div class="SpecialCardCall-Icon"><i class="fal fa-phone-volume"></i></div>
+														<div class="SpecialCardCall-Contact">+7 700 212 2640</div>
+														<div class="SpecialCardCall-Text">Позвоните для спецального бронирования</div>
+													</div>
+													<div class="SpecialCardMail">
+														<div class="SpecialCardMail-Icon"><i class="fal fa-envelope"></i></div>
+														<div class="SpecialCardMail-Contact">info@luxuryrest.kz</div>
+														<div class="SpecialCardMail-Text">Напишите для спецального бронирования</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4">
+											<div class="SpecialCard">
+												<div class="SpecialCard-Image" style="background-image: url(../img/specialbooking/familyevent.jpg);"></div>
+												<div class="SpecialCard-Content">
+													<h3 class="SpecialCard-Title">Семейный ужин</h3>
+													<p class="SpecialCard-Desc">
+														Наш ресторан славится особым домашним уютом и мы всегда рады встретить вас вместе со всей семьей в нашем ресторане.
+													</p><br>
+												</div>
+												<div class="SpecialCard-Popup">
+													<div class="SpecialCardCall">
+														<div class="SpecialCardCall-Icon"><i class="fal fa-phone-volume"></i></div>
+														<div class="SpecialCardCall-Contact">+7 700 212 2640</div>
+														<div class="SpecialCardCall-Text">Позвоните для спецального бронирования</div>
+													</div>
+													<div class="SpecialCardMail">
+														<div class="SpecialCardMail-Icon"><i class="fal fa-envelope"></i></div>
+														<div class="SpecialCardMail-Contact">info@luxuryrest.kz</div>
+														<div class="SpecialCardMail-Text">Напишите для спецального бронирования</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-4">
+											<div class="SpecialCard">
+												<div class="SpecialCard-Image" style="background-image: url(../img/specialbooking/romanicevent.jpg);"></div>
+												<div class="SpecialCard-Content">
+													<h3 class="SpecialCard-Title">Романтический ужин</h3>
+													<p class="SpecialCard-Desc">
+														Для этого усмотрен наш зимний сад, где можно любоваться красотой ограомных количеств растений и деревьев. Сделав такой выбор вы не прогадаете.
+													</p>
+												</div>
+												<div class="SpecialCard-Popup">
+													<div class="SpecialCardCall">
+														<div class="SpecialCardCall-Icon"><i class="fal fa-phone-volume"></i></div>
+														<div class="SpecialCardCall-Contact">+7 700 212 2640</div>
+														<div class="SpecialCardCall-Text">Позвоните для спецального бронирования</div>
+													</div>
+													<div class="SpecialCardMail">
+														<div class="SpecialCardMail-Icon"><i class="fal fa-envelope"></i></div>
+														<div class="SpecialCardMail-Contact">info@luxuryrest.kz</div>
+														<div class="SpecialCardMail-Text">Напишите для спецального бронирования</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					<!-- SpecialReservation END -->
+					
+				</div>
+			</div>
+			<!-- PageInner END -->
+
+			<!-- OpeningHours -->
+			<link rel="stylesheet" href="../css/OpeningHours.css">
+				<section class="OpeningHours">
+					<div class="OpeningHours-Content">
+						<div class="container-fluid">
+							<div class="row align-items-center">
+								<div class="col-12 col-sm-auto">
+									<h2 class="OpeningHours-Title SectionTitle">Время работы</h2>
+								</div>
+								<div class="col-12 col-sm">
+									<div class="OpeningHours-Schedule">
+										<div class="OpeningHours-Days">
+											<div class="OpeningHours-Day">С Понедельника до Пятницы</div>	
+											<div class="OpeningHours-Time">10:00 - 22:00</div>	
+										</div>
+										<div class="OpeningHours-Days">
+											<div class="OpeningHours-Day">В Субботу и Воскресенье</div>	
+											<div class="OpeningHours-Time">09:00 - 21:00</div>	
+										</div>
+									</div>
+								</div>
+								<div class="col-auto d-none d-lg-block">
+									<div class="OpeningHours-Image"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			<!-- OpeningHours END -->
+
+			<!-- Footer -->
+			<link rel="stylesheet" href="../css/Footer.css">
+				<footer class="Footer">
+					<div class="Footer-Content">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-3">
+									<h3 class="Footer-Title">Навигация</h3>
+									<ul class="FooterNavigation">
+										<li class="FooterNavigation-Item"><a href="../index.html">Главная</a></li>
+										<li class="FooterNavigation-Item"><a href="about.html">О нас</a></li>
+										<li class="FooterNavigation-Item"><a href="menu.html">Меню</a></li>
+										<li class="FooterNavigation-Item"><a href="reservation.html">Бронирование</a></li>
+										<li class="FooterNavigation-Item"><a href="recipes.html">Рецепты</a></li>
+										<li class="FooterNavigation-Item"><a href="#">Блог</a></li>
+										<li class="FooterNavigation-Item"><a href="contacts.html">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-9">
+									<h3 class="Footer-Title">Рассылка</h3>
+									<div class="Newsletter">
+										<div class="Newsletter-Title">Введите свой адрес электронной почты и подпишитесь на ежедневную рассылку новостей</div>
+										<form action="#" class="Newsletter-Form">
+											<div class="Newsletter-Label">
+												<div class="Newsletter-Icon">
+													<i class="fal fa-envelope"></i>
+												</div>
+												<input type="email" required="" placeholder="E-mail" class="Newsletter-Input">
+											</div>
+											<button class="Newsletter-Button Button">Подписаться</button>
+										</form>
+									</div>
+									<ul class="Socials">
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_FB"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_TW"><i class="fab fa-twitter"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_GP"><i class="fab fa-google-plus-g"></i></a></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<div class="FooterCopyright">
+										<span class="line"></span>
+										<div class="FooterCopyright-Content">
+											<span class="year"></span>&copy; <span class="CompanyName">Ресторан LUXURY</span> <span class="AllRightsReserved">Все права защищены</span>
+										</div>
+										<span class="line"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			<!-- Footer END -->
+			
+		</div>
+	<!-- page-wrapper END -->
+
+	
+	<!-- ***** SCRIPTS ***** -->
+
+		<!-- jQuery -->
+		<script src="../libs/jquery/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+	    <script src="../libs/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- LoadCSS JS -->
+		<script src="../libs/loadCSS/cssrelpreload.js"></script>
+
+		<!-- Owl Carousel -->
+		<script src="../libs/owlCarousel/js/owl.carousel.min.js"></script>
+
+		<!-- Main JS -->
+		<script src="../js/main.js"></script>
+
+	<!-- ******************* -->
+
+</body>
+
+</html>

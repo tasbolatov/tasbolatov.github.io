@@ -1,0 +1,237 @@
+/*** FONTS ***/
+.Header-Content {
+  height: 5rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.Header-Logo {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 12.5rem;
+  text-decoration: none;
+  height: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/icons/logo.png");
+  background-size: contain;
+}
+
+.Header-MenuBtn {
+  display: none;
+}
+
+.Header-MenuBtn .hamburger {
+  display: -webkit-box;
+  display: flex;
+}
+
+.TopMenu {
+  width: 100%;
+}
+
+.TopMenu-Content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.TopMenu-Item {
+  display: -webkit-box;
+  display: flex;
+}
+
+.TopMenu-Link {
+  font-family: "opensans-x", Arial, sans-serif;
+  display: inline-block;
+  padding: 1px 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-size: .75rem;
+  position: relative;
+}
+
+.TopMenu-Link:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.TopMenu-Link::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  left: .625rem;
+  bottom: 5px;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  right: .625rem;
+  height: 2px;
+  background-color: #fff;
+}
+
+.Cart {
+  display: -webkit-box;
+  display: flex;
+  position: relative;
+}
+
+.Cart-Icon {
+  position: relative;
+  display: block;
+}
+
+.Cart-Icon i {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.Cart-ItemsCount {
+  position: absolute;
+  top: -.625rem;
+  right: -.625rem;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  color: #fff;
+  font-family: "opensans-x", Arial, sans-serif;
+  font-size: .75rem;
+  background-color: #fe4c8d;
+}
+
+.Cart-PopupToggle {
+  color: #fff;
+  cursor: pointer;
+  padding: 0 .9375rem;
+}
+
+.Cart-PopupToggle i {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.Cart-PopupToggle_active i {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.MiniCart {
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  left: 50%;
+  display: none;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding-top: 1.25rem;
+}
+
+.MiniCart-Content {
+  background-color: #fff;
+  width: 18.75rem;
+  height: 9.375rem;
+  position: relative;
+}
+
+.MiniCart-Content::before {
+  position: absolute;
+  content: '';
+  top: -1.25rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: .625rem solid #fff;
+  border-right: .625rem solid transparent;
+  border-top: .625rem solid transparent;
+  border-left: .625rem solid transparent;
+}
+
+@media only screen and (max-width: 1200px) {
+  /**/
+}
+
+@media only screen and (max-width: 1100px) {
+  .Header-MenuBtn {
+    display: block;
+  }
+  .Body-MenuOpened .TopMenu {
+    -webkit-transform: translateX(-300px);
+            transform: translateX(-300px);
+  }
+  .TopMenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    background-color: #fff;
+    width: 300px;
+    z-index: 10;
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+    padding-top: 35px;
+  }
+  .TopMenu-Wrapper {
+    padding: 0;
+  }
+  .TopMenu-Content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .TopMenu-Link {
+    color: #000;
+    width: 100%;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px 20px;
+  }
+  .TopMenu-Link:after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+@media only screen and (max-width: 576px) {
+  .Header-Logo {
+    width: 170px;
+  }
+  .TopMenu {
+    width: calc(100vw - 60px);
+    right: calc(-100vw + 60px);
+  }
+  .TopMenu-Item:last-child {
+    padding-right: 20px;
+    padding-top: 30px;
+    text-align: right;
+  }
+  .Body-MenuOpened .TopMenu {
+    -webkit-transform: translateX(calc(-100vw + 60px));
+            transform: translateX(calc(-100vw + 60px));
+  }
+}
+
+@media only screen and (min-width: 1660px) {
+  /**/
+}

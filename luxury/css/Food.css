@@ -1,0 +1,76 @@
+/*** FONTS ***/
+.FoodsList-Item:last-child .Food {
+  border-bottom: none;
+}
+
+.Food {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  padding: .75rem 0;
+}
+
+
+.Food-Image {
+  background-color: #7d8587;
+  background-size: cover;
+  background-position: center;
+  display: none;
+}
+
+.Food-Lead{
+  max-width: 485px;
+}
+
+.Food-Name {
+  font-family: "opensans-x", Arial, sans-serif;
+  color: #14141d;
+  text-transform: uppercase;
+  font-size: .9375rem;
+  margin-top: 0;
+  margin-bottom: .1875rem;
+}
+
+.Food-Desc {
+  font-family: "opensans-x", Arial, sans-serif;
+  color: #5c6369;
+  font-size: .8125rem;
+}
+
+.Food-Price {
+  color: #14141d;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.Food-Price span {
+  font-size: .6em;
+  position: relative;
+  left: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Food-Lead{
+    max-width: 263px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /**/
+}
+
+@media only screen and (max-width: 768px) {
+  /**/
+}
+
+@media only screen and (max-width: 576px) {
+  /**/
+}
+
+@media only screen and (min-width: 1660px) {
+  /**/
+}

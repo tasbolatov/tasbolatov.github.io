@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ресторан LUXURY</title>
+	<meta name="description" content="Project description">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="../img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Styles for Async load -->
+	
+		<!-- FONTS -->
+		<link rel="preload" href="../css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/fonts.css">
+		</noscript>
+
+		<!-- Font Awesome -->
+		<link rel="preload" href="../libs/font-awesome/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/font-awesome/css/all.css">
+		</noscript>
+
+		<!-- Owl Carousel -->
+		<link rel="preload" href="../libs/owlCarousel/css/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.carousel.min.css">
+		</noscript>
+		<link rel="preload" href="../libs/owlCarousel/css/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../libs/owlCarousel/css/owl.theme.default.min.css">
+		</noscript>
+
+		<!-- Hamburger CSS -->
+		<link rel="preload" href="../css/hamburgers.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="../css/hamburgers.css">
+		</noscript>
+
+		<!-- EXAMPLE -->
+		<!-- <link rel="preload" href="path/to/mystylesheet.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="path/to/mystylesheet.css">
+		</noscript> -->
+
+		<!-- END Styles for Async load -->
+
+	<!-- Bootstrap Grid CSS -->
+	<link rel="stylesheet" href="../libs/bootstrap-grid/bootstrap-grid.min.css">
+
+	<!-- Base CSS -->
+	<link rel="stylesheet" href="../css/base.css">
+
+	<!-- Food CSS -->
+	<link rel="stylesheet" href="../css/Food.css">
+
+</head>
+
+<body>
+
+	<!-- page-wrapper -->
+		<div class="page-wrapper">
+
+			<!-- Header -->
+			<link rel="stylesheet" href="../css/Header.css">
+				<header class="Header">
+					<div class="Header-Content">
+						<div class="container-fluid">
+							<div class="row align-items-center">
+								<div class="col-auto">
+									<a href="../index.html" class="Header-Logo"></a>
+								</div>
+								<div class="col TopMenu-Wrapper">
+									<nav class="TopMenu">
+										<ul class="TopMenu-Content">
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="../index.html">Главная</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="menu.html">Меню</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="recipes.html">Рецепты</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="reservation.html">Бронирование</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="about.html">О нас</a>
+											</li>
+											<li class="TopMenu-Item">
+												<a class="TopMenu-Link" href="#">Контакты</a>
+											</li>
+											<li class="TopMenu-Item d-block d-sm-none">
+												<a href="#ReserveTable" class="Button Button_Border Navigate">
+													<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+													Бронировать
+												</a>
+											</li>
+										</ul>
+									</nav>
+								</div>
+								<!-- <div class="col-auto">
+									<div class="Cart">
+										<a href="#" class="Cart-Icon">
+											<i class="fal fa-shopping-cart"></i>
+											<span class="Cart-ItemsCount">3</span>
+										</a>
+										<div class="Cart-PopupToggle d-none d-sm-block">
+											<i class="fa fa-caret-down"></i>
+										</div>
+										<div class="MiniCart">
+											<div class="MiniCart-Content"></div>
+										</div>
+									</div>
+								</div> -->
+								<div class="col-auto d-none d-sm-block">
+									<a href="#ReserveTable" class="Button Button_Border Navigate">
+										<img class="Button-Icon" src="../img/icons/plate.png" alt="">
+										Бронировать
+									</a>
+								</div>
+								<div class="col-auto Header-MenuBtn">
+									<div class="hamburger hamburger--stand">
+										<div class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+			<!-- Header END -->
+
+			<!-- PageInner -->
+			<link rel="stylesheet" href="../css/PageInner.css">
+			<div class="PageInner">
+				<div class="PageInner-Content">
+					<div class="PageInner-Lead">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-12">
+									<h2 class="PageInner-Title">Контакты</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Map -->
+					<link rel="stylesheet" href="../css/Map.css">
+						<section class="Map">
+							<div class="Map-Content">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1239.9595341793136!2d71.42977198329177!3d51.1285890158719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4245841e0caadcf7%3A0x4f6ce0ff87111d39!2z0JHQsNC50YLQtdGA0LXQug!5e0!3m2!1skk!2skz!4v1587988741368!5m2!1skk!2skz" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							</div>
+						</section>
+					<!-- Map END -->
+
+					<!-- Contacts -->
+					<link rel="stylesheet" href="../css/Contacts.css">
+						<section class="Contacts">
+							<div class="Contacts-Content">
+								<div class="container-fluid Contacts-Card">
+									<div class="row no-gutters">
+										<div class="col-md-6">
+											<div class="Contacts-CardLeft">
+												<h2 class="Contacts-Title SectionTitle">Связаться</h2>
+												<form class="ContactsForm">
+													<div class="ContactsForm-Label">
+														<div class="ContactsForm-Icon">
+															<i class="fal fa-user"></i>
+														</div>
+														<input type="text" class="ContactsForm-Input" placeholder="Имя*" required>
+													</div>
+													<div class="ContactsForm-Label">
+														<div class="ContactsForm-Icon">
+															<i class="fal fa-envelope"></i>
+														</div>
+														<input type="email" class="ContactsForm-Input" placeholder="Email*" required>
+													</div>
+													<div class="ContactsForm-Label">
+														<div class="ContactsForm-Icon">
+															<i class="fal fa-comments"></i>
+														</div>
+														<textarea class="ContactsForm-Input ContactsForm-Input_Textarea" placeholder="Сообщение*" required></textarea>
+													</div>
+													<button type="submit" class="ContactsForm--Button Button">Отправить</button>
+												</form>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="Contacts-CardRight">
+												<h2 class="Contacts-Title SectionTitle">Наши контакты</h2>
+												<ul class="AddressList">
+													<li class="AddressList-Item">
+														<div class="AddressList-Title">Адрес</div>
+														г. Нур-Султан <br>
+														Luxury Restaurant, 010000
+													</li>
+													<li class="AddressList-Item">
+														<div class="AddressList-Title">Телефон</div>
+														<a href="tel:+77002122640" class="AddressList-Link">+7 700 212 2640</a>
+													</li>
+													<li class="AddressList-Item">
+														<div class="AddressList-Title">E-mail</div>
+														<a href="mailto:info@luxuryrestaurent.com" class="AddressList-Link">info@luxuryrest.kz</a>
+													</li>
+													<li class="AddressList-Item">
+														<div class="AddressList-Title">Следи за нами</div>
+														<ul class="Socials">
+															<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_FB"><i class="fab fa-facebook-f"></i></a></li>
+															<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_TW"><i class="fab fa-twitter"></i></a></li>
+															<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_GP"><i class="fab fa-google-plus-g"></i></a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					<!-- Contacts END -->
+
+				</div>
+			</div>
+			<!-- PageInner END -->
+
+			<!-- Footer -->
+			<link rel="stylesheet" href="../css/Footer.css">
+				<footer class="Footer">
+					<div class="Footer-Content">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-sm-3">
+									<h3 class="Footer-Title">Навигация</h3>
+									<ul class="FooterNavigation">
+										<li class="FooterNavigation-Item"><a href="../index.html">Главная</a></li>
+										<li class="FooterNavigation-Item"><a href="about.html">О нас</a></li>
+										<li class="FooterNavigation-Item"><a href="menu.html">Меню</a></li>
+										<li class="FooterNavigation-Item"><a href="reservation.html">Бронирование</a></li>
+										<li class="FooterNavigation-Item"><a href="recipes.html">Рецепты</a></li>
+										<li class="FooterNavigation-Item"><a href="#">Блог</a></li>
+										<li class="FooterNavigation-Item"><a href="contacts.html">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-9">
+									<h3 class="Footer-Title">Рассылка</h3>
+									<div class="Newsletter">
+										<div class="Newsletter-Title">Введите свой адрес электронной почты и подпишитесь на ежедневную рассылку новостей</div>
+										<form action="#" class="Newsletter-Form">
+											<div class="Newsletter-Label">
+												<div class="Newsletter-Icon">
+													<i class="fal fa-envelope"></i>
+												</div>
+												<input type="email" required="" placeholder="E-mail" class="Newsletter-Input">
+											</div>
+											<button class="Newsletter-Button Button">Подписаться</button>
+										</form>
+									</div>
+									<ul class="Socials">
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_FB"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_TW"><i class="fab fa-twitter"></i></a></li>
+										<li class="Socials-Item"><a href="#" class="Socials-Link Socials-Link_GP"><i class="fab fa-google-plus-g"></i></a></li>
+									</ul>
+								</div>
+								<div class="col-12">
+									<div class="FooterCopyright">
+										<span class="line"></span>
+										<div class="FooterCopyright-Content">
+											<span class="year"></span>&copy; <span class="CompanyName">Ресторан LUXURY</span> <span class="AllRightsReserved">Все права защищены</span>
+										</div>
+										<span class="line"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</footer>
+			<!-- Footer END -->
+			
+		</div>
+	<!-- page-wrapper END -->
+
+	
+	<!-- ***** SCRIPTS ***** -->
+
+		<!-- jQuery -->
+		<script src="../libs/jquery/jquery.min.js"></script>
+
+		<!--[if lt IE 9]>
+	    <script src="../libs/html5shiv/html5shiv.js"></script>
+		<![endif]-->
+
+		<!-- LoadCSS JS -->
+		<script src="../libs/loadCSS/cssrelpreload.js"></script>
+
+		<!-- Owl Carousel -->
+		<script src="../libs/owlCarousel/js/owl.carousel.min.js"></script>
+
+		<!-- Main JS -->
+		<script src="../js/main.js"></script>
+
+	<!-- ******************* -->
+
+</body>
+
+</html>
