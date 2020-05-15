@@ -106,7 +106,7 @@ html {
 }
 
 .Contacts-Link {
-  background-color: #307349;
+  background-color: #405D75;
   color: #ffffff;
   display: -webkit-box;
   display: flex;
@@ -130,7 +130,7 @@ html {
 }
 
 .Contacts-Link:hover {
-  background-color: #02541d;
+  background-color: #4177CA;
 }
 
 @media only screen and (max-width: 1200px) {
