@@ -1,0 +1,31 @@
+/*** FONTS ***/
+footer {
+  background-color: #32383e;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  color: #a1aab4;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+@media only screen and (max-width: 576px) {
+  /**/ }
+
+@media only screen and (min-width: 1660px) {
+  /**/ }
