@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "roboto-x", Arial, sans-serif;
+  font-family: Consolas, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 html {
-  background-color: #fff;
+  background-color: #1e272e;
 }
 
 .Container {
@@ -72,22 +72,10 @@ html {
   max-width: 700px;
   margin: 0 auto;
   width: 100%;
-}
-
-.Logo {
-  margin: 0 auto 5px auto;
-  width: 70px;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.Logo img {
-  max-width: 100%;
-  display: block;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .InstaLink {
@@ -101,12 +89,30 @@ html {
   margin-top: 15px;
 }
 
+.Contacts {
+  width: 400px;
+  height: 400px;
+  padding-right: 15px;
+  overflow-y: scroll;
+}
+
+.Contacts::-webkit-scrollbar {
+  width: 14px;
+  background-color: #3a4b58;
+}
+
+.Contacts::-webkit-scrollbar-thumb {
+  background-color: #2d3a44;
+  border: 2px solid #3a4b58
+}
+
 .Contacts-Item{
   position: relative;
+  width: 100%;
 }
 
 .Contacts-Link {
-  background-color: #405D75;
+  background-color: #485460;
   color: #fff;
   display: -webkit-box;
   display: flex;
@@ -130,7 +136,7 @@ html {
 }
 
 .Contacts-Link:hover {
-  background-color: #4177CA;
+  background-color: #708091;
 }
 
 @media only screen and (max-width: 1200px) {
